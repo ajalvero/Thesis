@@ -1,0 +1,342 @@
+Column definitions for merged_forreal6:
+This document is meant to clarify column titles that are otherwise unclear. This means not every column is defined; some should be self-evident.
+
+###
+Hispanic/Latino Population Data
+From https://data.census.gov/table/ACSDT5Y2022.B03001?q=B03001:%20Hispanic%20or%20Latino%20Origin%20by%20Specific%20Origin&g=010XX00US$8600000_860XX00US30165
+
+NAME: 
+zip codes
+
+B03001_001E:
+Total Population Estimate
+(E = estimate)
+
+B03001_001M:
+Total Population Margin of Error
+(M = Margin of Error)
+
+B03001_002:
+Not Hispanic or Latino
+
+B03001_003:
+Total Hispanic
+
+B03001_004:
+Mexican
+
+B03001_005:
+Puerto Rican
+
+B03001_006:
+Cuban
+
+B03001_007:
+Dominican
+
+B03001_008:
+Central American
+
+B03001_009:
+Costa Rican
+
+B03001_010:
+Guatemalan
+
+B03001_011:
+Honduran
+
+B03001_012:
+Nicaraguan
+
+B03001_013:
+Panamanian
+
+B03001_014:
+Salvadoran
+
+B03001_015:
+Other Central American
+
+B03001_016:
+South American
+
+B03001_017:
+Argentinean
+
+B03001_018:
+Bolivian
+
+B03001_019:
+Chilean
+
+B03001_020:
+Colombian
+
+B03001_021:
+Ecuadorian
+
+B03001_022:
+Paraguayan
+
+B03001_023:
+Peruvian
+
+B03001_024:
+Uruguayan
+
+B03001_025:
+Venezuelan
+
+B03001_026:
+Other South American
+
+B03001_027:
+Other Hispanic/Latino
+
+B03001_028:
+Spaniard
+
+B03001_029:
+Spanish
+
+B03001_030:
+Spanish American
+
+B03001_031:
+Other
+
+####
+Social Capital Data:
+From https://s3.us-east-1.amazonaws.com/hdx-production-filestore/resources/fbe5b0b9-e81c-41c7-a9f2-3ebf8212cf64/data_release_readme_31_07_2022_nomatrix.pdf?AWSAccessKeyId=AKIAXYC32WNASC7A2BC4&Signature=gYPQPh1PX5G8%2FCRlghI2mSYqrPc%3D&Expires=1716395328
+
+zip:
+5-digit zip code
+
+county:
+County FIPS code
+
+num_below_p50:
+"Number of children with below-national-median parental household
+income" (Chetty et al., 2022)
+
+pop2018:
+2018 population
+
+ec_zip:
+"Baseline definition of economic connectedness: two times the share
+of high-SES friends among low-SES individuals, averaged over all
+low-SES individuals in the ZIP code" (Chetty et al., 2022)
+
+ec_se_zip:
+"The standard error of economic connectedness, incorporating both
+sampling error and error from the addition of noise to protect privacy" (Chetty et al., 2022)
+
+nbhd_ec_zip:
+"Economic connectedness calculated using only within-neighborhood
+friends" (Chetty et al., 2022)
+
+ec_grp_mem_zip:
+"Two times the share of high-SES friends among low-SES individuals
+averaged over all low-SES individuals in the ZIP code, restricting
+attention to friendships that we can allocate to the group in which
+they were formed as described in Supplementary Information B.1
+and B.2" (Chetty et al., 2022)
+
+ec_high_zip:
+"Economic connectedness for high-SES individuals: two times the
+share of high-SES friends among high-SES individuals, averaged over
+all high-SES individuals in the ZIP code" (Chetty et al., 2022)
+
+ec_high_se_zip:
+"The standard error of economic connectedness for high-SES individuals" (Chetty et al., 2022)
+
+nbhd_ec_high_zip:
+"High-type economic connectedness calculated using only an individual’s neighborhood friends" (Chetty et al., 2022)
+
+ec_grp_mem_high_zip:
+"Two times the share of high-SES friends among high-SES individuals
+averaged over all high-SES individuals in the ZIP code, restricting
+attention to friendships that we can allocate to the group in which
+they were formed" (Chetty et al., 2022)
+
+exposure_grp_mem_zip:
+"Mean exposure to high-SES individuals by ZIP code for low-SES
+individuals: two times the average share of high-SES individuals in
+individuals’ groups, averaged over low-SES users" (Chetty et al., 2022)
+
+exposure_grp_mem_high_zip:
+"Mean exposure to high-SES individuals by ZIP code for high-SES
+individuals: two times the average share of high-SES individuals in
+individuals’ groups, averaged over high-SES users" (Chetty et al., 2022)
+
+nbhd_exposure_zip:
+"Exposure calculated using only users living in the relevant ZIP code" (Chetty et al., 2022)
+
+bias_grp_mem_zip:
+"ec_grp_mem_zip divided by exposure_grp_mem_zip, all subtracted
+from one" (Chetty et al., 2022)
+
+bias_grp_mem_high_zip:
+"ec_grp_mem_high_zip divided by exposure_grp_mem_high_zip, all
+subtracted from one" (Chetty et al., 2022)
+
+nbhd_bias_zip:
+"nbhd ec zip divided by nbhd exposure zip, all subtracted from
+one" (Chetty et al., 2022)
+
+nbhd_bias_high_zip:
+"nbhd_ec_high_zip divided by nbhd_exposure_zip, all subtracted
+from one" (Chetty et al., 2022)
+
+clustering_zip:
+"The average fraction of an individual’s friend pairs who are also
+friends with each other" (Chetty et al., 2022)
+
+support_ratio_zip:
+"The proportion of within-ZIP code friendships where the pair of
+friends share a third mutual friend within the same ZIP code" (Chetty et al., 2022)
+
+volunteering_rate_zip:
+"The percentage of Facebook users who are members of a group which
+is predicted to be about ‘volunteering’ or ‘activism’ based on group
+title and other group characteristics" (Chetty et al., 2022)
+
+civic_organizations_zip:
+"The number of Facebook Pages predicted to be “Public Good” pages
+based on page title, category, and other page characteristics, per
+1,000 users in the ZIP code" (Chetty et al., 2022)
+
+####
+Educational Attainment for Hispanic or Latino Population (25+ Years old):
+Data from: https://data.census.gov/table/ACSDT5Y2020.C15002I?q=Educational%20attainment%20of%20latino&g=010XX00US$8600000
+
+C15002I_001:
+Total
+
+C15002I_002:
+Male
+
+C15002I_003:
+Less than high school diploma - Male
+
+C15002I_004:
+High school graduate (includes equivalency) - Male
+
+C15002I_005:
+Some college or associate's degree - Male
+
+C15002I_006:
+Bachelor's degree or higher - Male
+
+C15002I_007:
+Female
+
+C15002I_008:
+Less than high school diploma - Female
+
+C15002I_009:
+High school graduate (includes equivalency) - Female
+
+C15002I_010:
+Some college or associate's degree - Female
+
+C15002I_011:
+Bachelor's degree or higher - Male
+
+###
+Poverty Status in the Past 12 Months by Age (Hispanic or Latino):
+Data from: https://data.census.gov/table/ACSDT5Y2022.B17020I?q=poverty%20latino&g=010XX00US$8600000
+
+B17020I_001:
+Total
+
+B17020I_002:
+Income in the past 12 months below poverty level
+
+B17020I_003:
+Under 6 years: below poverty level
+
+B17020I_004:
+6 to 11 years: below poverty level
+
+B17020I_005:
+12 to 17 years: below poverty level
+
+B17020I_006:
+18 to 59 years: below poverty level
+
+B17020I_007:
+60 to 74 years: below poverty level
+
+B17020I_008:
+75 to 84 years: below poverty level
+
+B17020I_009:
+85 years and over: below poverty level
+
+B17020I_010:
+Income in the past 12 months at or above poverty level
+
+B17020I_011:
+Under 6 years: above poverty level
+
+B17020I_012:
+6 to 11 years: above poverty level
+
+B17020I_013:
+12 to 17 years: above poverty level
+
+B17020I_014:
+18 to 59 years: above poverty level
+
+B17020I_015:
+60 to 74 years: above poverty level
+
+B17020I_016:
+75 to 84 years: above poverty level
+
+B17020I_017:
+85 years and over: above poverty level
+
+###
+Urbanization:
+Data and definitions from: https://www.ers.usda.gov/data-products/rural-urban-commuting-area-codes/documentation/
+
+RUCA1:
+Primary RUCA codes, 2010
+1 - "Metropolitan area core: primary flow within an urbanized area (UA)"
+2 - "Metropolitan area high commuting: primary flow 30% or more to a UA"
+3 - "Metropolitan area low commuting: primary flow 10% to 30% to a UA"
+4 - "Micropolitan area core: primary flow within an urban cluster of 10,000 to 49,999 (large UC)"
+5 - "Micropolitan high commuting: primary flow 30% or more to a large UC"
+6 - "Micropolitan low commuting: primary flow 10% to 30% to a large UC"
+7 - "Small town core: primary flow within an urban cluster of 2,500 to 9,999 (small UC)"
+8 - "Small town high commuting: primary flow 30% or more to a small UC"
+9 - "Small town low commuting: primary flow 10% to 30% to a small UC"
+10 - "Rural areas: primary flow to a tract outside a UA or UC"
+99 - "Not coded: Census tract has zero population and no rural-urban identifier information"
+
+RUCA2:
+Secondary RUCA codes, 2010
+1.0 - "No additional code"
+1.1 - "Secondary flow 30% to 50% to a larger UA"
+2.0 - "No additional code"
+2.1 - "Secondary flow 30% to 50% to a larger UA"
+3.0 - "No additional code"
+4.0 - "No additional code"
+4.1 - "Secondary flow 30% to 50% to a UA"
+5.0 - "No additional code"
+5.1 - "Secondary flow 30% to 50% to a UA"
+6.0 - "No additional code"
+7.0 - "No additional code"
+7.1 - "Secondary flow 30% to 50% to a UA"
+7.2 - "Secondary flow 30% to 50% to a large UC"
+8.0 - "No additional code"
+8.1 - "Secondary flow 30% to 50% to a UA"
+8.2 - "Secondary flow 30% to 50% to a large UC"
+9.0 - "No additional code"
+10.0 - "No additional code"
+10.1 - "Secondary flow 30% to 50% to a UA"
+10.2 - "Secondary flow 30% to 50% to a large UC"
+10.3 - "Secondary flow 30% to 50% to a small UC"
